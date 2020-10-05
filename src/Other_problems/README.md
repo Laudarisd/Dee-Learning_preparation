@@ -79,14 +79,14 @@ Solution: otherwise, we would have a composition of linear functions, which is a
 
 74. Describe two ways of dealing with the vanishing gradient problem in a neural network.
 
-Solution:
+*Solution:*
 
 * Using ReLU activation instead of sigmoid.
 * Using Xavier initialization.
 
 75. What are some advantages in using a CNN (convolutional neural network) rather than a DNN (dense neural network) in an image classification task?
 
-Solution: while both models can capture the relationship between close pixels, CNNs have the following properties:
+*Solution:* while both models can capture the relationship between close pixels, CNNs have the following properties:
 
 * It is translation invariant — the exact location of the pixel is irrelevant for the filter.
 * It is less likely to overfit — the typical number of parameters in a CNN is much smaller than that of a DNN.
@@ -95,7 +95,7 @@ Solution: while both models can capture the relationship between close pixels, C
 
 76. Describe two ways to visualize features of a CNN in an image classification task.
 
-Solution:
+*Solution:*
 
 * Input occlusion — cover a part of the input image and see which part affect the classification the most. For instance, given a trained image classification model, give the images below as input. If, for instance, we see that the 3rd image is classified with 98% probability as a dog, while the 2nd image only with 65% accuracy, it means that
 
@@ -112,26 +112,26 @@ Solution:
 
 77. Is trying the following learning rates: 0.1,0.2,…,0.5 a good strategy to optimize the learning rate?
 
-Solution: No, it is recommended to try a logarithmic scale to optimize the learning rate.
+*Solution:* No, it is recommended to try a logarithmic scale to optimize the learning rate.
 
 78. Suppose you have a NN with 3 layers and ReLU activations. What will happen if we initialize all the weights with the same value? what if we only had 1 layer (i.e linear/logistic regression?)
 
-Solution: If we initialize all the weights to be the same we would not be able to break the symmetry; i.e, all gradients will be updated the same and the network will not be able to learn. In the 1-layers scenario, however, the cost function is convex (linear/sigmoid) and thus the weights will always converge to the optimal point, regardless of the initial value (convergence may be slower).
+*Solution:* If we initialize all the weights to be the same we would not be able to break the symmetry; i.e, all gradients will be updated the same and the network will not be able to learn. In the 1-layers scenario, however, the cost function is convex (linear/sigmoid) and thus the weights will always converge to the optimal point, regardless of the initial value (convergence may be slower).
 
 79. Explain the idea behind the Adam optimizer.
 
-Solution: Adam, or adaptive momentum, combines two ideas to improve convergence: per-parameter updates which give faster convergence, and momentum which helps to avoid getting stuck in saddle point.
+*Solution:* Adam, or adaptive momentum, combines two ideas to improve convergence: per-parameter updates which give faster convergence, and momentum which helps to avoid getting stuck in saddle point.
 
 80. What is saddle point?
 
 
 81. Compare batch, mini-batch and stochastic gradient descent.
 
-Solution: batch refers to estimating the data by taking the entire data, mini-batch by sampling a few datapoints, and SGD refers to update the gradient one datapoint at each epoch. The tradeoff here is between how precise the calculation of the gradient is versus what size of batch we can keep in memory. Moreover, taking mini-batch rather than the entire batch has a regularizing effect by adding random noise at each epoch.
+*Solution:* batch refers to estimating the data by taking the entire data, mini-batch by sampling a few datapoints, and SGD refers to update the gradient one datapoint at each epoch. The tradeoff here is between how precise the calculation of the gradient is versus what size of batch we can keep in memory. Moreover, taking mini-batch rather than the entire batch has a regularizing effect by adding random noise at each epoch.
 
 82. What is data augmentation? Give examples.
 
-Solution: Data augmentation is a technique to increase the input data by performing manipulations on the original data. For instance in images, one can: rotate the image, reflect (flip) the image, add Gaussian blur
+*Solution:* Data augmentation is a technique to increase the input data by performing manipulations on the original data. For instance in images, one can: rotate the image, reflect (flip) the image, add Gaussian blur
 
 
 
@@ -139,5 +139,7 @@ Solution: Data augmentation is a technique to increase the input data by perform
 
 
 [click](https://www.simplilearn.com/tutorials/deep-learning-tutorial/deep-learning-interview-questions)
+
 [click](https://www.springboard.com/blog/machine-learning-interview-questions/)
+
 [click](https://towardsdatascience.com/50-deep-learning-interview-questions-part-1-2-8bbc8a00ec61)
