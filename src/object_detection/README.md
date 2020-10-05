@@ -21,7 +21,7 @@ CNNs compare images piece by piece. The piece that it looks for are called featu
 <table border="0">
    <tr>
       <td>
-      <img src="./src/img/features.png" width="100%" />
+      <img src="./img/features.png" width="100%" />
       </td>
    </tr>
    </table>
@@ -33,7 +33,7 @@ When presented with a new image, the CNN doesn’t know exactly where these feat
 <table border="0">
    <tr>
       <td>
-      <img src="./src/img/convolution.png" width="100%" />
+      <img src="./img/convolution.png" width="100%" />
       </td>
    </tr>
    </table>
@@ -49,7 +49,7 @@ After pooling, an image has about a quarter as many pixels as it started with. B
 <table border="0">
    <tr>
       <td>
-      <img src="./src/img/pooling.png" width="100%" />
+      <img src="./img/pooling.png" width="100%" />
       </td>
    </tr>
    </table>
@@ -62,10 +62,10 @@ A small but important player in this process is the Rectified Linear Unit or ReL
 <table border="0">
    <tr>
       <td>
-      <img src="./src/img/rlu1.png" width="100%" />
+      <img src="./img/rlu1.png" width="100%" />
       </td>
       <td>
-      <img src="./src/img/rlu2.png" width="100%" />
+      <img src="./img/rlu2.png" width="100%" />
       </td>
    </tr>
    </table>
@@ -79,10 +79,10 @@ You’ve probably noticed that the input to each layer (two-dimensional arrays) 
 <table border="0">
    <tr>
       <td>
-      <img src="./src/img/deep1.png" width="100%" />
+      <img src="./img/deep1.png" width="100%" />
       </td>
       <td>
-      <img src="./src/img/deep2.png" width="100%" />
+      <img src="./img/deep2.png" width="100%" />
       </td>
    </tr>
    </table>
@@ -96,10 +96,10 @@ When a new image is presented to the CNN, it percolates through the lower layers
 <table border="0">
    <tr>
       <td>
-      <img src="./src/img/fc1.png" width="100%" />
+      <img src="./img/fc1.png" width="100%" />
       </td>
       <td>
-      <img src="./src/img/fc2.png" width="100%" />
+      <img src="./img/fc2.png" width="100%" />
       </td>
    </tr>
    </table>
@@ -112,7 +112,7 @@ Our story is filling in nicely, but it still has a huge hole—Where do features
 <table border="0">
    <tr>
       <td>
-      <img src="./src/img/bp1.png" width="100%" />
+      <img src="./img/bp1.png" width="100%" />
       </td>
    </tr>
    </table>
