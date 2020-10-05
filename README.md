@@ -11,6 +11,7 @@ In general, the image classification techniques can be categorised as parametric
 The main steps involved in image classification techniques are determining a suitable classification system, feature extraction, selecting good training samples, image pre-processing and selection of appropriate classification method, post-classification processing, and finally assessing the overall accuracy. 
 
 **[Detection](https://github.com/Laudarisd/Interview_exam_preparation/tree/main/src/object_detection)**
+
 The problem definition of object detection is to determine where objects are located in a given image such as object localisation and which category each object belongs to, i.e. object classification. In simple words, object detection is a type of image classification technique, and besides classifying, this technique also identifies the location of the object instances from a large number of predefined categories in natural images. 
 
 This technique has the capability to search for a specific class of objects, such as cars, people, animals, birds, etc. and has successfully been used in the next-generation image as well as video processing systems. The recent advancements in this technique have only become possible with the advent of deep learning methodologies.
