@@ -2,6 +2,7 @@ Overview Image Classification & Object Detection
 ============================================================
 
 **[Image Classification](https://github.com/Laudarisd/Interview_exam_preparation/tree/main/src/image_classification)**
+=======================================================================================================================
 
 In simple words, image classification is a technique that is used to classify or predict the class of a specific object in an image. The main goal of this technique is to accurately identify the features in an image.
 
@@ -24,6 +25,7 @@ In general, the image classification techniques can be categorised as parametric
 The main steps involved in image classification techniques are determining a suitable classification system, feature extraction, selecting good training samples, image pre-processing and selection of appropriate classification method, post-classification processing, and finally assessing the overall accuracy. 
 
 **[Detection](https://github.com/Laudarisd/Interview_exam_preparation/tree/main/src/object_detection)**
+========================================================================================================
 
 The problem definition of object detection is to determine where objects are located in a given image such as object localisation and which category each object belongs to, i.e. object classification. In simple words, object detection is a type of image classification technique, and besides classifying, this technique also identifies the location of the object instances from a large number of predefined categories in natural images. 
 
