@@ -59,4 +59,17 @@ Over the past few years, great success has been achieved in a controlled environ
 
 
 
+* [Common model architectures used for object detection](https://github.com/Laudarisd/Interview_exam_preparation/tree/main/src/object_detection)
+* [How do Convolutional Neural Networks work](https://github.com/Laudarisd/Interview_exam_preparation/tree/main/src/object_detection)
+* [Features](https://github.com/Laudarisd/Interview_exam_preparation/tree/main/src/object_detection)
+* [Convolution](https://github.com/Laudarisd/Interview_exam_preparation/tree/main/src/object_detection)
+* [Pooling](https://github.com/Laudarisd/Interview_exam_preparation/tree/main/src/object_detection)
+* [Rectified Linear Units(RELU)](https://github.com/Laudarisd/Interview_exam_preparation/tree/main/src/object_detection)
+* [Deep learning](https://github.com/Laudarisd/Interview_exam_preparation/tree/main/src/object_detection)
+* [Fully connected layers](https://github.com/Laudarisd/Interview_exam_preparation/tree/main/src/object_detection)
+* [Backpropagation](https://github.com/Laudarisd/Interview_exam_preparation/tree/main/src/object_detection)
+* [Hyperparameters](https://github.com/Laudarisd/Interview_exam_preparation/tree/main/src/object_detection)
+* [Deep learning tools](https://github.com/Laudarisd/Interview_exam_preparation/tree/main/src/object_detection)
+* [Overview on Frameworks](https://github.com/Laudarisd/Interview_exam_preparation/tree/main/src/object_detection)
+
 
