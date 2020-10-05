@@ -1,29 +1,3 @@
-Difference Between Image Classification & Object Detection
-============================================================
-
-**Image Classification**
-
-In simple words, image classification is a technique that is used to classify or predict the class of a specific object in an image. The main goal of this technique is to accurately identify the features in an image.
-
-How Image Classification Works
-In general, the image classification techniques can be categorised as parametric and non-parametric or supervised and unsupervised as well as hard and soft classifiers. For supervised classification, this technique delivers results based on the decision boundary created, which mostly rely on the input and output provided while training the model. But, in the case of unsupervised classification, the technique provides the result based on the analysis of the input dataset own its own; features are not directly fed to the models.
-
-The main steps involved in image classification techniques are determining a suitable classification system, feature extraction, selecting good training samples, image pre-processing and selection of appropriate classification method, post-classification processing, and finally assessing the overall accuracy. 
-
-**Detection**
-The problem definition of object detection is to determine where objects are located in a given image such as object localisation and which category each object belongs to, i.e. object classification. In simple words, object detection is a type of image classification technique, and besides classifying, this technique also identifies the location of the object instances from a large number of predefined categories in natural images. 
-
-This technique has the capability to search for a specific class of objects, such as cars, people, animals, birds, etc. and has successfully been used in the next-generation image as well as video processing systems. The recent advancements in this technique have only become possible with the advent of deep learning methodologies.
-
-Object detection techniques can be used in real-world projects such as face detection, pedestrian detection, vehicle detection, traffic sign detection, video surveillance, among others.  
-
-How Object Detection Works
-The pipeline of traditional object detection models can be mainly divided into three stages, that are informative region selection, feature extraction and classification. There are several popular deep learning-based models for object detection, which have been used by organisations and academia to achieve efficiency as well as accurate results in detecting objects from images. The popular models include MobileNet, You Only Live Once (YOLO), Mark-RCNN, RetinaNet, among others.
-
-Disadvantages 
-Over the past few years, great success has been achieved in a controlled environment for object detection problem. However, the problem remains unsolved in uncontrolled places, in particular, when objects are placed in arbitrary poses in a cluttered and occluded environment.
-
-
 Common model architectures used for object detection
 =======================================================
 
@@ -47,7 +21,7 @@ CNNs compare images piece by piece. The piece that it looks for are called featu
 <table border="0">
    <tr>
       <td>
-      <img src="./img/features.png" width="100%" />
+      <img src="./src/img/features.png" width="100%" />
       </td>
    </tr>
    </table>
@@ -59,7 +33,7 @@ When presented with a new image, the CNN doesn’t know exactly where these feat
 <table border="0">
    <tr>
       <td>
-      <img src="./img/convolution.png" width="100%" />
+      <img src="./src/img/convolution.png" width="100%" />
       </td>
    </tr>
    </table>
@@ -75,7 +49,7 @@ After pooling, an image has about a quarter as many pixels as it started with. B
 <table border="0">
    <tr>
       <td>
-      <img src="./img/pooling.png" width="100%" />
+      <img src="./src/img/pooling.png" width="100%" />
       </td>
    </tr>
    </table>
@@ -88,10 +62,10 @@ A small but important player in this process is the Rectified Linear Unit or ReL
 <table border="0">
    <tr>
       <td>
-      <img src="./img/rlu1.png" width="100%" />
+      <img src="./src/img/rlu1.png" width="100%" />
       </td>
       <td>
-      <img src="./img/rlu2.png" width="100%" />
+      <img src="./src/img/rlu2.png" width="100%" />
       </td>
    </tr>
    </table>
@@ -105,10 +79,10 @@ You’ve probably noticed that the input to each layer (two-dimensional arrays) 
 <table border="0">
    <tr>
       <td>
-      <img src="./img/deep1.png" width="100%" />
+      <img src="./src/img/deep1.png" width="100%" />
       </td>
       <td>
-      <img src="./img/deep2.png" width="100%" />
+      <img src="./src/img/deep2.png" width="100%" />
       </td>
    </tr>
    </table>
@@ -122,10 +96,10 @@ When a new image is presented to the CNN, it percolates through the lower layers
 <table border="0">
    <tr>
       <td>
-      <img src="./img/fc1.png" width="100%" />
+      <img src="./src/img/fc1.png" width="100%" />
       </td>
       <td>
-      <img src="./img/fc2.png" width="100%" />
+      <img src="./src/img/fc2.png" width="100%" />
       </td>
    </tr>
    </table>
@@ -138,7 +112,7 @@ Our story is filling in nicely, but it still has a huge hole—Where do features
 <table border="0">
    <tr>
       <td>
-      <img src="./img/bp1.png" width="100%" />
+      <img src="./src/img/bp1.png" width="100%" />
       </td>
    </tr>
    </table>
