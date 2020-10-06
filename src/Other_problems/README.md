@@ -5,33 +5,58 @@ Some common problems and answers
 
 *solution*
 
+Deep Learning involves taking large volumes of structured or unstructured data and using complex algorithms to train neural networks. It performs complex operations to extract hidden patterns and features (for instance, distinguishing the image of a cat from that of a dog
+
 **2. What is Neural Network?**
 
 *solution*
+
+Neural Networks replicate the way humans learn, inspired by how the neurons in our brains fire, only much simpler.
+
+The most common Neural Networks consist of three network layers:
+
+* An input layer
+* A hidden layer (this is the most important layer where feature extraction takes place, and adjustments are made to train faster and function better)
+* An output layer
 
 **3. What is a Multi-layer Perception(MLP)?**
 
 *solution*
 
+As in Neural Networks, MLPs have an input layer, a hidden layer, and an output layer. It has the same structure as a single layer perceptron with one or more hidden layers. A single layer perceptron can classify only linear separable classes with binary output (0,1), but MLP can classify nonlinear classes.
+
+Except for the input layer, each node in the other layers uses a nonlinear activation function. This means the input layers, the data coming in, and the activation function is based upon all nodes and weights being added together, producing the output. MLP uses a supervised learning method called “backpropagation.” In backpropagation, the neural network calculates the error with the help of cost function. It propagates this error backward from where it came (adjusts the weights to train the model more accurately).
+
 **4. What Is Data Normalization, and Why Do We Need It**
 
 *solution*
+
+The process of standardizing and reforming data is called “Data Normalization.” It’s a pre-processing step to eliminate data redundancy. Often, data comes in, and you get the same information in different formats. In these cases, you should rescale values to fit into a particular range, achieving better convergence.
 
 **5. What is the Boltzmann Machine**
 
 *solution*
 
+One of the most basic Deep Learning models is a Boltzmann Machine, resembling a simplified version of the Multi-Layer Perceptron. This model features a visible input layer and a hidden layer -- just a two-layer neural net that makes stochastic decisions as to whether a neuron should be on or off. Nodes are connected across layers, but no two nodes of the same layer are connected.
+
 **6. What Is the Role of Activation Functions in a Neural Network?**
 
 *solution*
+
+At the most basic level, an activation function decides whether a neuron should be fired or not. It accepts the weighted sum of the inputs and bias as input to any activation function. Step function, Sigmoid, ReLU, Tanh, and Softmax are examples of activation functions.
 
 **7. What Is the Cost Function?**
 
 *solution*
 
+Also referred to as “loss” or “error,” cost function is a measure to evaluate how good your model’s performance is. It’s used to compute the error of the output layer during backpropagation. We push that error backward through the neural network and use that during the different training functions.
+
+
 **8. What Is Gradient Descent?**
 
 *solution*
+
+Gradient Descent is an optimal algorithm to minimize the cost function or to minimize an error. The aim is to find the local-global minima of a function. This determines the direction the model should take to reduce the error.
 
 
 **9. What Do You Understand by Backpropagation?**
