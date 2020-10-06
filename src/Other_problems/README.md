@@ -260,113 +260,204 @@ print(sess.run(c))
 ```
 
 **27. Explain a Computational Graph.**
+
 *solution*
+
+Everything in a tensorflow is based on creating a computational graph. It has a network of nodes where each node operates, Nodes represent mathematical operations, and edges represent tensors. Since data flows in the form of a graph, it is also called a “DataFlow Graph.”
+
+
 **28. Explain Generative Adversarial Network.**
+
 *solution*
+
+Suppose there is a wine shop purchasing wine from dealers, which they resell later. But some dealers sell fake wine. In this case, the shop owner should be able to distinguish between fake and authentic wine.
+
+The forger will try different techniques to sell fake wine and make sure specific techniques go past the shop owner’s check. The shop owner would probably get some feedback from wine experts that some of the wine is not original. The owner would have to improve how he determines whether a wine is fake or authentic.
+
+The forger’s goal is to create wines that are indistinguishable from the authentic ones while the shop owner intends to tell if the wine is real or not accurately.
+
+
 **29. What Is an Auto-encoder?**
+
 *solution*
+
+This Neural Network has three layers in which the input neurons are equal to the output neurons. The network's target outside is the same as the input. It uses dimensionality reduction to restructure the input. It works by compressing the image input to a latent space representation then reconstructing the output from this representation.
+
+
 **30. What Is Bagging and Boosting?**
+
 *solution*
+
+Bagging and Boosting are ensemble techniques to train multiple models using the same learning algorithm and then taking a call.
+
+With Bagging, we take a dataset and split it into training data and test data. Then we randomly select data to place into the bags and train the model separately.
+
+With Boosting, the emphasis is on selecting data points which give wrong output to improve the accuracy.
+
+
 **31. What is batch normalization?**
+
 *solution*
+
 **32. How does YOLO work?**
+
 *solution*
+
 **33. What is the difference between R-CNN and CNN?**
+
 *solution*
+
 **34. Why do we need pretrain model?**
+
 *solution*
+
 **35. Explain the architecture of pretrain model(Resnet, mobilenet, etc).**
+
 *solution*
+
 **36. What are supervised and unsupervised learning algorithms in deep learning?**
+
+
 *solution*
+
 **37. What’s the trade-off between bias and variance?**
+
 *solution*
+
 **38. How is KNN different from k-means clustering?**
+
 *solution*
+
 **39. Explain how a ROC curve works.**
+
 *solution*
+
 **40. Define precision and recall.**
+
 *solution*
+
 **41. Explain stride.**
+
 *solution*
+
 **42. What is Bayes’ Theorem? How is it useful in a machine learning context?**
+
 *solution*
+
 **43. Why is “Naive” Bayes naive?**
+
 *solution*
+
 **44. Explain the difference between L1 and L2 regularization.**
+
 *solution*
+
 **45. What’s your favorite algorithm, and can you explain it to me in less **than a minute?**
+
 *solution*
+
 **46. What’s the difference between Type I and Type II error?**
+
 *solution*
+
 **47. What’s a Fourier transform?**
+
 *solution*
+
 **48. What’s the difference between probability and likelihood?**
+
 *solution*
+
 **49. What’s the difference between a generative and discriminative model?**
+
 *solution*
+
 **50. What is cross-validation? What cross-validation technique would you use on a time series dataset?**
+
 *solution*
+
 
 **51. How is a decision tree pruned?**
+
 *solution*
+
 
 **52. Which is more important to you: model accuracy or model performance?**
+
 *solution*
 
+
 **53. What’s the F1 score? How would you use it?**
+
 *solution*
 
 **54. How would you handle an imbalanced dataset?**
+
 *solution*
 
 **55. When should you use classification over regression?**
+
 *solution*
 
 **56. Name an example where ensemble techniques might be useful.**
+
 *solution*
 
 **57. How do you ensure you’re not overfitting with a model?**
+
 *solution*
 
 
 **58. How would you evaluate a logistic regression model?**
+
 *solution*
 
 **59. What’s the “kernel trick” and how is it useful?**
+
 *solution*
 
 **60. Pick an algorithm. Write the pseudo-code for a parallel implementation.**
+
 *solution*
 
 **61. What are some differences between a linked list and an array?**
+
 *solution*
 
 **62. Which data visualization libraries do you use? What are your thoughts on the best data visualization tools?**
+
 *solution*
 
 **63. Given two strings, A and B, of the same length n, find whether it is **possible to cut both strings at a common point such that the first part of A and the second part  of B form a palindrome.**
+
 *solution*
 
 **64. How are primary and foreign keys related in SQL?**
+
 *solution*
 
 **65. How does XML and CSVs compare in terms of size?**
+
 *solution*
 
 **66. What are the data types supported by JSON?**
+
 *solution*
 
 **67. How would you build a data pipeline?**
+
 *solution*
 
 **68. How do you think Google is training data for self-driving cars?**
+
 *solution*
 
 **69. How would you simulate the approach AlphaGo took to beat Lee Sedol at Go?**
+
 *solution*
 
 **70. What are your thoughts on GPT-3 and OpenAI’s model?**
+
 *solution*
 
 **71. What models do you train for fun, and what GPU/hardware do you use?**
