@@ -374,13 +374,29 @@ Recall is also known as the true positive rate: the amount of positives your mod
 
 *solution*
 
+Bayes’ Theorem gives you the posterior probability of an event given what is known as prior knowledge.
+
+Mathematically, it’s expressed as the true positive rate of a condition sample divided by the sum of the false positive rate of the population and the true positive rate of a condition. Say you had a 60% chance of actually having the flu after a flu test, but out of people who had the flu, the test will be false 50% of the time, and the overall population only has a 5% chance of having the flu. Would you actually have a 60% chance of having the flu after having a positive test?
+
+Bayes’ Theorem says no. It says that you have a (.6 * 0.05) (True Positive Rate of a Condition Sample) / (.6*0.05)(True Positive Rate of a Condition Sample) + (.5*0.95) (False Positive Rate of a Population)  = 0.0594 or 5.94% chance of getting a flu.
+
+Bayes’ Theorem is the basis behind a branch of machine learning that most notably includes the Naive Bayes classifier. That’s something important to consider when you’re faced with machine learning interview questions.
+
+
 **43. Why is “Naive” Bayes naive?**
 
 *solution*
 
+Despite its practical applications, especially in text mining, Naive Bayes is considered “Naive” because it makes an assumption that is virtually impossible to see in real-life data: the conditional probability is calculated as the pure product of the individual probabilities of components. This implies the absolute independence of features — a condition probably never met in real life.
+
+As a Quora commenter put it whimsically, a Naive Bayes classifier that figured out that you liked pickles and ice cream would probably naively recommend you a pickle ice cream.
+
+
 **44. Explain the difference between L1 and L2 regularization.**
 
 *solution*
+
+ L2 regularization tends to spread error among all the terms, while L1 is more binary/sparse, with many variables either being assigned a 1 or 0 in weighting. L1 corresponds to setting a Laplacean prior on the terms, while L2 corresponds to a Gaussian prior.
 
 **45. What’s your favorite algorithm, and can you explain it to me in less **than a minute?**
 
@@ -390,9 +406,17 @@ Recall is also known as the true positive rate: the amount of positives your mod
 
 *solution*
 
+Type I error is a false positive, while Type II error is a false negative. Briefly stated, Type I error means claiming something has happened when it hasn’t, while Type II error means that you claim nothing is happening when in fact something is.
+
+A clever way to think about this is to think of Type I error as telling a man he is pregnant, while Type II error means you tell a pregnant woman she isn’t carrying a baby.
+
+
 **47. What’s a Fourier transform?**
 
 *solution*
+
+A Fourier transform is a generic method to decompose generic functions into a superposition of symmetric functions. Or as this more intuitive tutorial puts it, given a smoothie, it’s how we find the recipe. The Fourier transform finds the set of cycle speeds, amplitudes, and phases to match any time signal. A Fourier transform converts a signal from time to frequency domain—it’s a very common way to extract features from audio signals or other time series such as sensor data.
+
 
 **48. What’s the difference between probability and likelihood?**
 
@@ -402,14 +426,30 @@ Recall is also known as the true positive rate: the amount of positives your mod
 
 *solution*
 
+A generative model will learn categories of data while a discriminative model will simply learn the distinction between different categories of data. Discriminative models will generally outperform generative models on classification tasks.
+
 **50. What is cross-validation? What cross-validation technique would you use on a time series dataset?**
 
 *solution*
+
+ Instead of using standard k-folds cross-validation, you have to pay attention to the fact that a time series is not randomly distributed data—it is inherently ordered by chronological order. If a pattern emerges in later time periods, for example, your model may still pick up on it even if that effect doesn’t hold in earlier years!
+
+You’ll want to do something like forward chaining where you’ll be able to model on past data then look at forward-facing data.
+
+- Fold 1 : training [1], test [2]
+- Fold 2 : training [1 2], test [3]
+- Fold 3 : training [1 2 3], test [4]
+- Fold 4 : training [1 2 3 4], test [5]
+- Fold 5 : training [1 2 3 4 5], test [6]
 
 
 **51. How is a decision tree pruned?**
 
 *solution*
+
+Pruning is what happens in decision trees when branches that have weak predictive power are removed in order to reduce the complexity of the model and increase the predictive accuracy of a decision tree model. Pruning can happen bottom-up and top-down, with approaches such as reduced error pruning and cost complexity pruning.
+
+Reduced error pruning is perhaps the simplest version: replace each node. If it doesn’t decrease predictive accuracy, keep it pruned. While simple, this heuristic actually comes pretty close to an approach that would optimize for maximum accuracy.
 
 
 **52. Which is more important to you: model accuracy or model performance?**
@@ -421,21 +461,45 @@ Recall is also known as the true positive rate: the amount of positives your mod
 
 *solution*
 
+The F1 score is a measure of a model’s performance. It is a weighted average of the precision and recall of a model, with results tending to 1 being the best, and those tending to 0 being the worst. You would use it in classification tests where true negatives don’t matter much.
+
+
 **54. How would you handle an imbalanced dataset?**
 
 *solution*
+
+An imbalanced dataset is when you have, for example, a classification test and 90% of the data is in one class. That leads to problems: an accuracy of 90% can be skewed if you have no predictive power on the other category of data! Here are a few tactics to get over the hump:
+
+* Collect more data to even the imbalances in the dataset.
+* Resample the dataset to correct for imbalances.
+* Try a different algorithm altogether on your dataset.
 
 **55. When should you use classification over regression?**
 
 *solution*
 
+Classification produces discrete values and dataset to strict categories, while regression gives you continuous results that allow you to better distinguish differences between individual points. You would use classification over regression if you wanted your results to reflect the belongingness of data points in your dataset to certain explicit categories (ex: If you wanted to know whether a name was male or female rather than just how correlated they were with male and female names.)
+
+
 **56. Name an example where ensemble techniques might be useful.**
 
 *solution*
 
+ Ensemble techniques use a combination of learning algorithms to optimize better predictive performance. They typically reduce overfitting in models and make the model more robust (unlikely to be influenced by small changes in the training data). 
+
+You could list some examples of ensemble methods (bagging, boosting, the “bucket of models” method) and demonstrate how they could increase predictive power.
+
 **57. How do you ensure you’re not overfitting with a model?**
 
 *solution*
+
+This is a simple restatement of a fundamental problem in machine learning: the possibility of overfitting training data and carrying the noise of that data through to the test set, thereby providing inaccurate generalizations.
+
+There are three main methods to avoid overfitting:
+
+* Keep the model simpler: reduce variance by taking into account fewer variables and parameters, thereby removing some of the noise in the training data.
+* Use cross-validation techniques such as k-folds cross-validation.
+* Use regularization techniques such as LASSO that penalize certain model parameters if they’re likely to cause overfitting.
 
 
 **58. How would you evaluate a logistic regression model?**
@@ -446,57 +510,91 @@ Recall is also known as the true positive rate: the amount of positives your mod
 
 *solution*
 
+The Kernel trick involves kernel functions that can enable in higher-dimension spaces without explicitly calculating the coordinates of points within that dimension: instead, kernel functions compute the inner products between the images of all pairs of data in a feature space. This allows them the very useful attribute of calculating the coordinates of higher dimensions while being computationally cheaper than the explicit calculation of said coordinates. Many algorithms can be expressed in terms of inner products. Using the kernel trick enables us effectively run algorithms in a high-dimensional space with lower-dimensional data.
+
+
 **60. Pick an algorithm. Write the pseudo-code for a parallel implementation.**
 
 *solution*
+
+This kind of question demonstrates your ability to think in parallelism and how you could handle concurrency in programming implementations dealing with big data. Take a look at pseudocode frameworks such as Peril-L and visualization tools such as Web Sequence Diagrams to help you demonstrate your ability to write code that reflects parallelism.
+
 
 **61. What are some differences between a linked list and an array?**
 
 *solution*
 
+An array is an ordered collection of objects. A linked list is a series of objects with pointers that direct how to process them sequentially. An array assumes that every element has the same size, unlike the linked list. A linked list can more easily grow organically: an array has to be pre-defined or re-defined for organic growth. Shuffling a linked list involves changing which points direct where—meanwhile, shuffling an array is more complex and takes more memory.
+
 **62. Which data visualization libraries do you use? What are your thoughts on the best data visualization tools?**
 
 *solution*
+
+What’s important here is to define your views on how to properly visualize data and your personal preferences when it comes to tools. Popular tools include R’s ggplot, Python’s seaborn and matplotlib, and tools such as Plot.ly and Tableau.
 
 **63. Given two strings, A and B, of the same length n, find whether it is **possible to cut both strings at a common point such that the first part of A and the second part  of B form a palindrome.**
 
 *solution*
 
+You’ll often get standard algorithms and data structures questions as part of your interview process as a machine learning engineer that might feel akin to a software engineering interview. In this case, this comes from Google’s interview process. There are multiple ways to check for palindromes—one way of doing so if you’re using a programming language such as Python is to reverse the string and check to see if it still equals the original string, for example. The thing to look out for here is the category of questions you can expect, which will be akin to software engineering questions that drill down to your knowledge of algorithms and data structures. Make sure that you’re totally comfortable with the language of your choice to express that logic.
+
+
 **64. How are primary and foreign keys related in SQL?**
 
 *solution*
+
+Most machine learning engineers are going to have to be conversant with a lot of different data formats. SQL is still one of the key ones used. Your ability to understand how to manipulate SQL databases will be something you’ll most likely need to demonstrate. In this example, you can talk about how foreign keys allow you to match up and join tables together on the primary key of the corresponding table—but just as useful is to talk through how you would think about setting up SQL tables and querying them.
+
 
 **65. How does XML and CSVs compare in terms of size?**
 
 *solution*
 
+In practice, XML is much more verbose than CSVs are and takes up a lot more space. CSVs use some separators to categorize and organize data into neat columns. XML uses tags to delineate a tree-like structure for key-value pairs. You’ll often get XML back as a way to semi-structure data from APIs or HTTP responses. In practice, you’ll want to ingest XML data and try to process it into a usable CSV. This sort of question tests your familiarity with data wrangling sometimes messy data formats.
+
 **66. What are the data types supported by JSON?**
 
 *solution*
+
+This tests your knowledge of JSON, another popular file format that wraps with JavaScript. There are six basic JSON datatypes you can manipulate: strings, numbers, objects, arrays, booleans, and null values. 
 
 **67. How would you build a data pipeline?**
 
 *solution*
 
+ Data pipelines are the bread and butter of machine learning engineers, who take data science models and find ways to automate and scale them. Make sure you’re familiar with the tools to build data pipelines (such as Apache Airflow) and the platforms where you can host models and pipelines (such as Google Cloud or AWS or Azure). Explain the steps required in a functioning data pipeline and talk through your actual experience building and scaling them in production. 
+
 **68. How do you think Google is training data for self-driving cars?**
 
 *solution*
+
+Machine learning interview questions like this one really test your knowledge of different machine learning methods, and your inventiveness if you don’t know the answer. Google is currently using recaptcha to source labeled data on storefronts and traffic signs. They are also building on training data collected by Sebastian Thrun at GoogleX—some of which was obtained by his grad students driving buggies on desert dunes!
 
 **69. How would you simulate the approach AlphaGo took to beat Lee Sedol at Go?**
 
 *solution*
 
+AlphaGo beating Lee Sedol, the best human player at Go, in a best-of-five series was a truly seminal event in the history of machine learning and deep learning. The Nature paper above describes how this was accomplished with “Monte-Carlo tree search with deep neural networks that have been trained by supervised learning, from human expert games, and by reinforcement learning from games of self-play.”
+
+
 **70. What are your thoughts on GPT-3 and OpenAI’s model?**
 
 *solution*
+
+ GPT-3 is a new language generation model developed by OpenAI. It was marked as exciting because with very little change in architecture, and a ton more data, GPT-3 could generate what seemed to be human-like conversational pieces, up to and including novel-size works and the ability to create code from natural language. There are many perspectives on GPT-3 throughout the Internet — if it comes up in an interview setting, be prepared to address this topic (and trending topics like it) intelligently to demonstrate that you follow the latest advances in machine learning. 
 
 **71. What models do you train for fun, and what GPU/hardware do you use?**
 
 *solution*
 
+This question tests whether you’ve worked on machine learning projects outside of a corporate role and whether you understand the basics of how to resource projects and allocate GPU-time efficiently. Expect questions like this to come from hiring managers that are interested in getting a greater sense behind your portfolio, and what you’ve done independently.
+
+
 **72. What are some of your favorite APIs to explore?**
 
 *solution*
+
+[click](https://github.com/Laudarisd/Awesome_APIs)
 
 **73. Why is it necessary to introduce non-linearities in a neural network?**
 
@@ -530,7 +628,7 @@ while both models can capture the relationship between close pixels, CNNs have t
 <table border="0">
    <tr>
       <td>
-      <img src="./src/img/ob1.jpg" width="100%" />
+      <img src="./img/2.png" width="100%" />
       </td>
    </tr>
    </table>
