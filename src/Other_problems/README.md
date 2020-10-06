@@ -63,23 +63,82 @@ Gradient Descent is an optimal algorithm to minimize the cost function or to min
 
 *solution*
 
+Backpropagation is a technique to improve the performance of the network. It backpropagates the error and updates the weights to reduce the error.
+
 
 **10. What Is the Difference Between a Feedforward Neural Network and Recurrent Neural Network?**
+
 *solution*
+
+A Feedforward Neural Network signals travel in one direction from input to output. There are no feedback loops; the network considers only the current input. It cannot memorize previous inputs (e.g., CNN).
+
+A Recurrent Neural Network’s signals travel in both directions, creating a looped network. It considers the current input with the previously received inputs for generating the output of a layer and can memorize past data due to its internal memory.
+
+
 **11. What Are the Applications of a Recurrent Neural Network (RNN)?**
+
 *solution*
+
+The RNN can be used for sentiment analysis, text mining, and image captioning. Recurrent Neural Networks can also address time series problems such as predicting the prices of stocks in a month or quarter.
+
+
 **12. What Are the Softmax and ReLU Functions?**
+
 *solution*
+
+Softmax is an activation function that generates the output between zero and one. It divides each output, such that the total sum of the outputs is equal to one. Softmax is often used for output layers.
+
+ReLU (or Rectified Linear Unit) is the most widely used activation function. It gives an output of X if X is positive and zeroes otherwise. ReLU is often used for hidden layers.
+
+
 **13. What Are Hyperparameters?**
+
 *solution*
+
+With neural networks, you’re usually working with hyperparameters once the data is formatted correctly. A hyperparameter is a parameter whose value is set before the learning process begins. It determines how a network is trained and the structure of the network (such as the number of hidden units, the learning rate, epochs, etc.).
+
+
 **14. What Will Happen If the Learning Rate Is Set Too Low or Too High?**
+
 *solution*
+
+When your learning rate is too low, training of the model will progress very slowly as we are making minimal updates to the weights. It will take many updates before reaching the minimum point.
+
+If the learning rate is set too high, this causes undesirable divergent behavior to the loss function due to drastic updates in weights. It may fail to converge (model can give a good output) or even diverge (data is too chaotic for the network to train).
+
+
 **15. What Is Dropout and Batch Normalization?**
+
 *solution*
+
+Dropout is a technique of dropping out hidden and visible units of a network randomly to prevent overfitting of data (typically dropping 20 percent of the nodes). It doubles the number of iterations needed to converge the network.
+
+Batch normalization is the technique to improve the performance and stability of neural networks by normalizing the inputs in every layer so that they have mean output activation of zero and standard deviation of one.
+
+
 **16. What Is the Difference Between Batch Gradient Descent and Stochastic Gradient Descent?**
+
+
 *solution*
+
+|Batch Gradient Descent  |	Stochastic Gradient Descent|
+| :-------------: | :----------: |
+|The batch gradient computes the gradient using the entire dataset  |  The stochastic gradient computes the gradient using a single sample|
+|It takes time to converge because the volume of data is huge, and weights update slowly | It converges much faster than the batch gradient because it updates weight more frequently |
+
+
+
 **17. What is Overfitting and Underfitting, and How to Combat Them?**
+
 *solution*
+
+Overfitting occurs when the model learns the details and noise in the training data to the degree that it adversely impacts the execution of the model on new information. It is more likely to occur with nonlinear models that have more flexibility when learning a target function. An example would be if a model is looking at cars and trucks, but only recognizes trucks that have a specific box shape. It might not be able to notice a flatbed truck because there's only a particular kind of truck it saw in training. The model performs well on training data, but not in the real world.
+
+Underfitting alludes to a model that is neither well-trained on data nor can generalize to new information. This usually happens when there is less and incorrect data to train a model. Underfitting has both poor performance and accuracy.
+
+To combat overfitting and underfitting, you can resample the data to estimate the model accuracy (k-fold cross-validation) and by having a validation dataset to evaluate the model.
+
+
 **18. How Are Weights Initialized in a Network?**
 *solution*
 **19. What Are the Different Layers on CNN?**
