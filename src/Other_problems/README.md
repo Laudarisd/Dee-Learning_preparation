@@ -627,7 +627,7 @@ while both models can capture the relationship between close pixels, CNNs have t
 
 <table border="0">
    <tr>
-      <td>
+      <td>-------------------------------------------
       <img src="./img/2.png" width="100%" />
       </td>
    </tr>
