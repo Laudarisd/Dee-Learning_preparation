@@ -1,7 +1,7 @@
-Some comon problems and answers
+Some common problems and answers
 =================================
 
-**1. What is Deep Learning?****
+**1. What is Deep Learning?**
 
 *solution*
 
