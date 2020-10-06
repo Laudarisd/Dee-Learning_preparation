@@ -140,23 +140,125 @@ To combat overfitting and underfitting, you can resample the data to estimate th
 
 
 **18. How Are Weights Initialized in a Network?**
+
 *solution*
+
+There are two methods here: we can either initialize the weights to zero or assign them randomly.
+
+Initializing all weights to 0: This makes your model similar to a linear model. All the neurons and every layer perform the same operation, giving the same output and making the deep net useless.
+
+Initializing all weights randomly: Here, the weights are assigned randomly by initializing them very close to 0. It gives better accuracy to the model since every neuron performs different computations. This is the most commonly used method.
+
+
 **19. What Are the Different Layers on CNN?**
+
 *solution*
+
+There are four layers in CNN:
+
+* Convolutional Layer -  the layer that performs a convolutional operation, creating several smaller picture windows to go over the data.
+* ReLU Layer - it brings non-linearity to the network and converts all the negative pixels to zero. The output is a rectified feature map.
+* Pooling Layer - pooling is a down-sampling operation that reduces the dimensionality of the feature map.
+* Fully Connected Layer - this layer recognizes and classifies the objects in the image.
+
+
 **20. What is Pooling on CNN, and How Does It Work?**
+
 *solution*
+
+Pooling is used to reduce the spatial dimensions of a CNN. It performs down-sampling operations to reduce the dimensionality and creates a pooled feature map by sliding a filter matrix over the input matrix.
+
+
 **21. How Does an LSTM Network Work?**
+
 *solution*
+
+Long-Short-Term Memory (LSTM) is a special kind of recurrent neural network capable of learning long-term dependencies, remembering information for long periods as its default behavior. There are three steps in an LSTM network:
+
+* Step 1: The network decides what to forget and what to remember.
+* Step 2: It selectively updates cell state values.
+* Step 3: The network decides what part of the current state makes it to the output.
+
+
 **22. What Are Vanishing and Exploding Gradients?**
+
 *solution*
+
+While training an RNN, your slope can become either too small or too large; this makes the training difficult. When the slope is too small, the problem is known as a “Vanishing Gradient.” When the slope tends to grow exponentially instead of decaying, it’s referred to as an “Exploding Gradient.” Gradient problems lead to long training times, poor performance, and low accuracy.
+
 **23. What Is the Difference Between Epoch, Batch, and Iteration in Deep Learning?**
+
 *solution*
+
+* Epoch - Represents one iteration over the entire dataset (everything put into the training model).
+* Batch - Refers to when we cannot pass the entire dataset into the neural network at once, so we divide the dataset into several batches.
+* Iteration - if we have 10,000 images as data and a batch size of 200. then an epoch should run 50 iterations (10,000 divided by 50).
+
+
 **24. Why is Tensorflow the Most Preferred Library in Deep Learning?**
+
 *solution*
+
+Tensorflow provides both C++ and Python APIs, making it easier to work on and has a faster compilation time compared to other Deep Learning libraries like Keras and Torch. Tensorflow supports both CPU and GPU computing devices
+
 **25. What Do You Mean by Tensor in Tensorflow?**
+
 *solution*
+
+A tensor is a mathematical object represented as arrays of higher dimensions. These arrays of data with different dimensions and ranks fed as input to the neural network are called “Tensors.”
+
+
 **26. What Are the Programming Elements in Tensorflow?**
+
 *solution*
+
+Constants - Constants are parameters whose value does not change. To define a constant we use  tf.constant() command. For example:
+```
+a = tf.constant(2.0,tf.float32)
+
+b = tf.constant(3.0)
+
+Print(a, b)
+```
+
+Variables - Variables allow us to add new trainable parameters to graph. To define a variable, we use the tf.Variable() command and initialize them before running the graph in a session. An example:
+```
+W = tf.Variable([.3].dtype=tf.float32)
+
+b = tf.Variable([-.3].dtype=tf.float32)
+```
+
+Placeholders - these allow us to feed data to a tensorflow model from outside a model. It permits a value to be assigned later. To define a placeholder, we use the tf.placeholder() command. An example:
+```
+a = tf.placeholder (tf.float32)
+
+b = a*2
+
+with tf.Session() as sess:
+
+result = sess.run(b,feed_dict={a:3.0})
+
+print result
+```
+
+Sessions - a session is run to evaluate the nodes. This is called the “Tensorflow runtime.” For example:
+
+```
+a = tf.constant(2.0)
+
+b = tf.constant(4.0)
+
+c = a+b
+
+# Launch Session
+
+Sess = tf.Session()
+
+# Evaluate the tensor c
+
+print(sess.run(c))
+```
+
 **27. Explain a Computational Graph.**
 *solution*
 **28. Explain Generative Adversarial Network.**
