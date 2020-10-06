@@ -2,23 +2,43 @@ Some comon problems and answers
 =================================
 
 **1. What is Deep Learning?****
+
 *solution*
+
 **2. What is Neural Network?**
+
 *solution*
+
 **3. What is a Multi-layer Perception(MLP)?**
+
 *solution*
+
 **4. What Is Data Normalization, and Why Do We Need It**
+
 *solution*
+
 **5. What is the Boltzmann Machine**
+
 *solution*
+
 **6. What Is the Role of Activation Functions in a Neural Network?**
+
 *solution*
+
 **7. What Is the Cost Function?**
+
 *solution*
+
 **8. What Is Gradient Descent?**
+
 *solution*
+
+
 **9. What Do You Understand by Backpropagation?**
+
 *solution*
+
+
 **10. What Is the Difference Between a Feedforward Neural Network and Recurrent Neural Network?**
 *solution*
 **11. What Are the Applications of a Recurrent Neural Network (RNN)?**
