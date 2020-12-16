@@ -370,6 +370,10 @@ Recall is also known as the true positive rate: the amount of positives your mod
 
 *solution*
 
+Stride is a component of convolutional neural networks, or neural networks tuned for the compression of images and video data. Stride is a parameter of the neural network's filter that modifies the amount of movement over the image or video. For example, if a neural network's stride is set to 1, the filter will move one pixel, or unit,  at a time. The size of the filter affects the encoded output volume, so stride is often set to a whole integer, rather than a fraction or decimal.
+
+
+
 **42. What is Bayes’ Theorem? How is it useful in a machine learning context?**
 
 *solution*
