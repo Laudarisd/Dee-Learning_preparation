@@ -1,3 +1,27 @@
+Table of contents
+=================
+
+<!--ts-->
+   * [Overview ](https://github.com/Laudarisd/Deep-learning-and-ML-preparation)
+   * [Object_detection](https://github.com/Laudarisd/Project_Root/tree/master//imgdata_collection_tool)
+   * [image_classification](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/image_classification)
+   * [Machine_Learning_all](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src)
+      * [1-Data_Preprocessing](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/Machine_Learning_all)
+      * [2-Regression](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/Machine_Learning_all)
+      * [3-Classification](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/Machine_Learning_all)
+      * [4-Clustering](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/Machine_Learning_all)
+      * [5-Association_Rule_Learning](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/Machine_Learning_all)
+      * [6-Reinforcement_Learning](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/Machine_Learning_all)
+      * [7-Natural_Language](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/Machine_Learning_all)
+      * [8-Deep_Learning](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/Machine_Learning_all)
+      * [9-Dimensionality_Reduction](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/Machine_Learning_all)
+      * [10-Model_Selection_Boosting](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/Machine_Learning_all)
+   * [Other_problems](https://github.com/Laudarisd/Project_Root/tree/master/Object-Detection)
+   * [Numerical_problems](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/numerical_problems)
+<!--te-->
+
+
+
 Overview Image Classification & Object Detection
 ============================================================
 
