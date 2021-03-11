@@ -16,7 +16,7 @@ Table of contents
       * [8-Deep_Learning](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/Machine_Learning_all)
       * [9-Dimensionality_Reduction](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/Machine_Learning_all)
       * [10-Model_Selection_Boosting](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/Machine_Learning_all)
-   * [Other_problems](https://github.com/Laudarisd/Project_Root/tree/master/Object-Detection)
+   * [Other_problems](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/Other_problems)
    * [Numerical_problems](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/numerical_problems)
 <!--te-->
 
