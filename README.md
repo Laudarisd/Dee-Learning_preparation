@@ -3,7 +3,7 @@ Table of contents
 
 <!--ts-->
    * [Overview ](https://github.com/Laudarisd/Deep-learning-and-ML-preparation)
-   * [Object_detection](https://github.com/Laudarisd/Project_Root/tree/master//imgdata_collection_tool)
+   * [Object_detection](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/object_detection)
    * [image_classification](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/image_classification)
    * [Machine_Learning_all](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src)
       * [1-Data_Preprocessing](https://github.com/Laudarisd/Deep-learning-and-ML-preparation/tree/main/src/Machine_Learning_all)
