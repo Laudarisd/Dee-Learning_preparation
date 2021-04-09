@@ -99,7 +99,7 @@ Supervised Learning is an area of machine learning where we work on predicting t
    <table border="0">
    <tr>
       <td>
-      <img src="./src/img/5.jpg" width="100%" />
+      <img src="./src/img/5.png" width="100%" />
       </td>
    </tr>
    </table>
