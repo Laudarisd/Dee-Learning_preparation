@@ -30,7 +30,7 @@ Overview
    
    
    
-*More Details*
+**More Details**
 
 
 
@@ -93,7 +93,7 @@ Supervised Learning is an area of machine learning where we work on predicting t
    
 
    
-*Types of Supervised Machine Learning Algorithm*
+**Types of Supervised Machine Learning Algorithm**
 
 
    <table border="0">
@@ -105,7 +105,7 @@ Supervised Learning is an area of machine learning where we work on predicting t
    </table>
    
    
-*Regression*
+**Regression**
 
 
 Regression is used to predict single value output using the training data set. The output value is always called as the dependent variable while the inputs are known as the independent variable. We have different types of regression in Supervised Learning, for example,
@@ -115,7 +115,7 @@ Regression is used to predict single value output using the training data set. T
 - Polynomial Regression – Here the graph between the dependent and independent variables follows a polynomial function. For e.g. at first, memory increases with age, then it reaches a threshold at a certain age, and then it starts decreasing as we turn old.
 
 
-*Classification*
+**Classification**
 
 The classification of supervised learning algorithms is used to group similar objects into unique classes.
 
@@ -132,7 +132,7 @@ The classification of supervised learning algorithms is used to group similar ob
 
 
 
-*Advantages*
+**Advantages**
 
 
 Below are some of the advantages of supervised machine learning models:
@@ -142,7 +142,7 @@ Below are some of the advantages of supervised machine learning models:
 - Supervised machine learning algorithms can be used for implementing a number of real-world problems.
 
 
-*Disadvantages*
+**Disadvantages**
 
 Disadvantages of Supervised Learning are as follow:
 
@@ -154,7 +154,7 @@ Disadvantages of Supervised Learning are as follow:
 
 
 
-*Good Practices while Building Learning Models*
+**Good Practices while Building Learning Models**
 
 
 It is a good practice while building a Supervised Learning Machine Models:-
